@@ -10,7 +10,7 @@ namespace Data
 {
     static class SQLHelper
     {
-        public static string Connection { get; } = @"Server = ROBERTO\SQLEXPRESS;DataBase=Neptuno;User Id=sa;Password=BIG_mama_4lov3;";
+        public static string Connection { get; } = @"Server = ROBERTO\SQLEXPRESS;DataBase=Neptuno;User Id=sa;Password=MyPassword;";
 
         public static Int32 ExecuteNonQuery(String connectionString, String commandText, CommandType commandType, params SqlParameter[] paramaters)
         {
