@@ -12,6 +12,6 @@ namespace Lab05
     /// Lógica de interacción para App.xaml
     /// </summary>
     public partial class App : Application
-    {
+    { 
     }
 }

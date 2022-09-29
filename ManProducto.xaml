@@ -1,0 +1,40 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab05"
+        mc:Ignorable="d"
+        x:Class="Lab05.ManProducto"
+        Title="ManProducto" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label x:Name="lblID">ID</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label>Nombre de producto</Label>
+                <TextBox x:Name="txtNombreProducto" Margin="53px 0px 0px 0px" Width="300px"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label>Precio Unidad</Label>
+                <TextBox x:Name="numPrecioUnidad" Margin="30px 0px 0px 0px" Width="300px"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label>Suspendido</Label>
+                <TextBox x:Name="numSuspendido" Margin="30px 0px 0px 0px" Width="300px"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Margin="10px 10px 10px 10px" x:Name="btnGrabar" Click="BtnGrabar_Click" >Grabar</Button>
+                <Button Margin="10px 10px 10px 10px" x:Name="btnCerrar" Click="BtnCerrar_Click"  >Cerrar</Button>
+                <Button Margin="10px 10px 10px 10px" x:Name="btnEliminar" Click="BtnEliminar_Click" >Eliminar</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
